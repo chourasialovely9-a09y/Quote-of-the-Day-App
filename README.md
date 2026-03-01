@@ -45,6 +45,16 @@ The app fetches quotes from an online API and also supports offline mode using a
 ✔ User Interaction  
 
 ---
+##  Screenshots
+
+###  Main Screen
+![Main Screen](Screenshot_20260301_202336.png)
+
+---
+
+###  Favorites Screen
+![Favorites Screen](Screenshot_20260301_202436.png)
+---
 
 ##  Developed By
 
