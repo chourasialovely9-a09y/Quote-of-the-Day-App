@@ -48,12 +48,13 @@ The app fetches quotes from an online API and also supports offline mode using a
 ##  Screenshots
 
 ###  Main Screen
-![Main Screen](Screenshot_20260301_202336.png)
-
+<p align="center"
+  <img src="Screenshot_20260301_202336.png" width="250"/>
 ---
 
 ###  Favorites Screen
-![Favorites Screen](Screenshot_20260301_202436.png)
+<p align="center"
+  <img src="Screenshot_20260301_202436.png" width="250"/>
 ---
 
 ##  Developed By
