@@ -44,9 +44,28 @@ public class MainActivity extends AppCompatActivity {
 
         loadDailyQuote();
 
-        btnHeart.setOnClickListener(v -> toggleFavorite());
+        btnHeart.setOnClickListener(v ->{
+                String currentQuote = tvQuote.getText().toString();
+                if(isLiked){
+                    btnHeart.setImageResource(R.drawable.outline_favorite);
+                    btnHeart.setColorFilter(
+                            ContextCompat.getColor(this, android.R.color.white)
+                    );
+                    database.removeFromFavorites(currentQuote);
+                    isLiked=false;
+                }else{
+                    btnHeart.setImageResource(R.drawable.filled_favorite);
+                    btnHeart.setColorFilter(
+                            ContextCompat.getColor(this, android.R.color.holo_red_light)
+                    );
+                    database.addToFavorites(currentQuote);
+                    isLiked=true;
+                }
+    });
+
 
         btnShare.setOnClickListener(v -> {
+            String text = tvQuote.getText().toString();
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
             intent.putExtra(Intent.EXTRA_TEXT, currentQuote);
