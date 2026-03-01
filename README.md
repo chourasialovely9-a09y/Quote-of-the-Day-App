@@ -48,6 +48,7 @@ The app fetches quotes from an online API and also supports offline mode using a
 ##  Screenshots
 
 <p align="center">
+  <img src="Screenshot_20260301_230446.png" width="250"/>
   <img src="Screenshot_20260301_202336.png" width="250"/>
   <img src="Screenshot_20260301_202436.png" width="250"/>
 </p>
